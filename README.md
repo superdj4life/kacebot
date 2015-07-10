@@ -17,6 +17,8 @@ Configuration
 
 In Slack, create a Bot integration. Take note of the bot name and token.
 Edit the config/config.yml file to include your Slack bot token, the Slack bot name, and the Kace domain.
+By default the token is read from an env variable; you can hardcode this if needed but
+the preferred method is to read it from an env variable.
 
 Running kacebot
 =================

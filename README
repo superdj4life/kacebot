@@ -15,7 +15,8 @@ Run 'bundle install' to install the project dependencies.
 Configuration
 ===============
 
-Edit the config/config.yml file to include your Slack bot token, the Slack bot name, and the Kace domain
+In Slack, create a Bot integration. Take note of the bot name and token.
+Edit the config/config.yml file to include your Slack bot token, the Slack bot name, and the Kace domain.
 
 Running kacebot
 =================

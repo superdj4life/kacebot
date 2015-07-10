@@ -1,0 +1,3 @@
+token: <%= ENV['SLACK_TOKEN'] %>
+botname: kacebot
+domain: https://my.kace.app

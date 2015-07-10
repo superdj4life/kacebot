@@ -21,7 +21,9 @@ gem 'safely' # Optional, but recommended.
 
 group :development, :test do
   gem 'rake'
-  gem 'rspec' 
+  gem 'rspec'
 end
 
 gem 'slack-api', '~> 1.1.6', require: 'slack'
+gem 'faye-websocket', '0.9.2'
+gem 'websocket-driver', '0.5.4'

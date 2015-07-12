@@ -24,7 +24,6 @@ client.on :hello do
 end
 
 client.on :message do |data|
-
   text = data['text']
   ticket_re = /[#]\d{5,6}/ #ticket numbers in the format #ddddd(d)
 

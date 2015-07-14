@@ -58,7 +58,7 @@ docker build -t kacebot .
 
 To run the container, you can run
 ```
-docker run -d -e "KACE_TOKEN=xxx-xxx-xxx-xxx" kacebot /bin/bash
+docker run -d -v /my/host/computer/kacebot:/kacebot -e "KACE_TOKEN=xxx-xxx-xxx-xxx" kacebot /bin/bash
 ```
 
 Help

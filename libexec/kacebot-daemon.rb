@@ -31,7 +31,7 @@ client.on :message do |data|
     DaemonKit.logger.info("Ticket # detected")
     match = ticket_re.match(text)
     ticket = match.to_s[1..-1]
-    Slack.chat_postMessage channel: data['channel'], text: "Kace Ticket Link: <#{CONFIG[:domain]}/userui/ticket.php?ID=#{ticket}>"
+    Slack.chat_postMessage channel: data['channel'], as_user: true, text: "Kace Ticket Link: <#{CONFIG[:domain]}/userui/ticket.php?ID=#{ticket}>"
     DaemonKit.logger.info("Kace URL Posted")
   end
 end

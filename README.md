@@ -46,6 +46,21 @@ Support for logrotate is baked right into daemon-kit. By sending your daemon a H
 }
 ```
 
+Docker
+======
+
+Kacebot includes a Dockerfile.
+
+To build the image (named kacebot), run
+```
+docker build -t kacebot .
+```
+
+To run the container, you can run
+```
+docker run -d -e "KACE_TOKEN=xxx-xxx-xxx-xxx" kacebot /bin/bash
+```
+
 Help
 =====
 

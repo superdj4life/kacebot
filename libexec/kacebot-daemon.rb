@@ -25,7 +25,7 @@ end
 
 client.on :message do |data|
   text = data['text']
-  ticket_re = /[#]\d{5,6}/ #ticket numbers in the format #ddddd(d)
+  ticket_re = /\B[#]\d{5,6}\b/ #ticket numbers in the format #ddddd(d)
 
   if text && text != "" && ticket_re =~ text && data['user'] != CONFIG[:botname]
     DaemonKit.logger.info("Ticket # detected")
